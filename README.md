@@ -1,1 +1,1 @@
-My favorite drink is coke zero.
+My favorite drink is water.
