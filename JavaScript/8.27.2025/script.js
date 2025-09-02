@@ -17,4 +17,3 @@ students.shift();
 console.log(students);
 
 
-
