@@ -1,0 +1,116 @@
+<!--
+Author: Cody Johnson
+Assignment: Lab 3 - Capstone
+Date: 20250905
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumbridge Castle Tavern</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+</head>
+<body>
+<header>
+
+                <img src="./assets/banner.png" alt="castle banner">
+
+                <a href="index.html"><img src="./assets/home.png" alt="home icon link"></a>
+
+                <a href="hiring.html"><img src="./assets/now_hiring.png" alt="now hiring icon link"></a>
+
+
+                <a href="menu.html" ><img src="./assets/menu.png" alt="menu icon link"></a>
+
+    <h1>Now Hiring!</h1>
+</header>
+
+
+            <img src="./assets/we_want_you.png" alt="we want you">
+
+<form action="/submit" method="POST">
+
+                <label for="fName">First Name:  </label>
+                <input type="text" placeholder="John" name="fName" id="fName" minlength="1" maxlength="20" required>
+
+                <label for="lName">Last Name:  </label>
+                <input type="text" placeholder="Doe" name="lName" id="lName" minlength="1" maxlength="20">
+
+                <label for="address1">Address 1:  </label>
+                <input type="text" placeholder="42 Wallaby Way" name="address1" id="address1" required>
+
+                <label for="address2">Address 2:  </label>
+                <input type="text" placeholder="123 South Street" name="address2" id="address2">
+
+                <label for="city">City:  </label>
+                <input type="text" placeholder="Sydney" name="city" id="city" maxlength="29" required>
+
+                <label for="state">State:  </label>
+                <select name="state" id="state" required>
+                    <option value="PA">PA</option>
+                    <option value="NY">NY</option>
+                    <option value="CA">CA</option>
+                    <option value="MI">MI</option>
+                    <option value="FL">FL</option>
+                </select>
+
+                <label for="age">Age:  </label>
+                <input placeholder="30" name="age" type="number" min="21" max="99" id="age" required>
+
+                <label for="phoneNumber">Phone Number:  </label>
+                <input type="tel"
+                       name="phoneNumber"
+                       id="phoneNumber"
+                       placeholder="111-222-3333"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                       title="Required format is 111-222-3333."
+                       required>
+
+                <label for="email">Email:  </label>
+                <input type="email" name="email" id="email" placeholder="john.doe@gmail.com" title="Valid email address required." required>
+
+                <label for="password">Password:  </label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       minlength="8"
+                       maxlength="12"
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$"
+                       title="8–12 characters and must include at least one uppercase, one lowercase, one number, and one special symbol."
+                       placeholder="Password"
+                       required>
+
+                <label for="notMarried">No: </label>
+                <input type="radio" name="maritalStatus" id="notMarried" value="notMarried" checked required>
+                <label for="married">Yes: </label>
+                <input type="radio" name="maritalStatus" id="married" value="married" required>
+
+                <label for="blue">Blue: </label>
+                <input type="checkbox" id="blue" name="colors" value="blue">
+                <label for="red">Red: </label>
+                <input type="checkbox" id="red" name="colors" value="red">
+                <label for="purple">Purple: </label>
+                <input type="checkbox" id="purple" name="colors" value="purple">
+                <label for="green">Green: </label>
+                <input type="checkbox" id="green" name="colors" value="green">
+                <label for="orange">Orange: </label>
+                <input type="checkbox" id="orange" name="colors" value="orange">
+
+                <label for="moreInfo">More Info: </label>
+                <textarea id="moreInfo"
+                          name="moreInfo"
+                          rows="4"
+                          maxlength="30"
+                          placeholder="Enter up to 30 characters on 4 rows..."></textarea>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+
+</form>
+
+<footer>
+
+</footer>
+</body>
+</html>
