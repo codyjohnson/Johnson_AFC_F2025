@@ -1,0 +1,27 @@
+h1:hover {
+    background-color: blue;
+}
+
+button:hover {
+    color: red;
+}
+
+button:active {
+    background-color: blue;
+}
+
+input:hover {
+    border: 10px solid blue;
+    cursor: pointer;
+
+}
+
+input:focus {
+    background-color: aqua;
+}
+
+a[href]:hover {
+    color: orange;
+}
+
+
