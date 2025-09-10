@@ -1,23 +1,44 @@
+/*Author: Cody Johnson*/
+/*Assignment: Lab 3 - Capstone*/
+/*Date: 20250905*/
+
+/*For my color palette, I went to Color Hunt and selected a theme that I felt went well with the medieval theme.*/
+/*Source: https://colorhunt.co/palette/181c143c3d37697565ecdfcc*/
+/*Colors:*/
+/*#181C14*/
+/*#3C3D37*/
+/*#697565*/
+/*#ECDFCC*/
+
+/*Sets the background image for the webpage*/
 body {
     background-image:
             url("../assets/osrs_background.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin-bottom: 0;
 }
 
+/*Google fonts class used to implement Google fonts*/
 .press-start-2p-regular {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
-.navbar, .footer-bar {
+/*Targets both the header and footer with styling*/
+.navbar {
     background-color: #181C14;
     border-bottom: solid 5px black;
     box-shadow: 5px 5px 10px black;
 }
 
+.footer-bar, footer {
+    background-color: #181C14;
+}
+
+/*Div used to control dimensions and appearance of the restaurant logo in the navbar*/
 .navbar-logo-container {
     height: 140px;
     width: 200px;
@@ -25,29 +46,50 @@ body {
     max-width: 200px;
 }
 
+/*Styling used to fit the navbar restaurant logo to its div*/
 #navbar-logo-image {
     height: 100%;
 }
 
-
+/*Setting the dimensions of the picture links for the navbar*/
 .picture-link {
     width: 100px;
 }
 
+/*On hover effect for the navbar picture links*/
 .picture-link:hover {
     border: 1px solid black;
     box-shadow: 3px 3px 5px black;
 }
 
-#footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    min-width: 100%;
-    height: 120px;
+#home_image_container {
+    width: 40%;
+    height: 400px;
+    margin-top: 250px;
+    margin-bottom: 150px;
 }
 
+#home_image_container img {
+    border: 5px solid black;
+    box-shadow: 10px 15px 15px black;
+}
+
+#hanging-icons {
+    background-color: #697565;
+    border: 5px solid black;
+    box-shadow: 10px 15px 15px black;
+}
+
+/*Size and positioning styling for the footer*/
+#footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 120px;
+    margin-top: 100px;
+}
+
+/*Spacing targeting the social media links in the footer to create extra space between the links*/
 .footer-link {
     margin-right: 20px;
 }
-

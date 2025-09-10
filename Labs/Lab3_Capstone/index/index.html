@@ -23,6 +23,7 @@ Date: 20250905
 </head>
 <body>
 <header>
+<!--    Navbar imported from BootStrap and then customized using a mixture of external and in-line CSS.-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top press-start-2p-regular">
         <div class="container-fluid">
             <div class="navbar-logo-container">
@@ -37,20 +38,46 @@ Date: 20250905
                         <a class="nav-link active" id="home-link" href="#"><img class="picture-link" src="../assets/home.png" alt="home page link"></a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" id="menu-link" href="#"><img class="picture-link" src="../assets/menu.png" alt="home page link"></a>
+                        <a class="nav-link active" id="menu-link" href="#"><img class="picture-link" src="../assets/menu.png" alt="menu page link"></a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" id="hiring-link" href="#"><img class="picture-link" src="../assets/now_hiring.png" alt="home page link"></a>
+                        <a class="nav-link active" id="hiring-link" href="#"><img class="picture-link" src="../assets/now_hiring.png" alt="now hiring page link"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+<!--Home page image-->
+<div class="home_image_container mx-auto" id="home_image_container">
+    <img src="../assets/home_page_image.png" alt="adventures at a table with a dragon" style="width: 100%">
+</div>
+<!--Restaurant features-->
+    <div class="container mt-5 px-4 py-5" id="hanging-icons">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-utensils" style="font-size: 40px"></i> </div>
+                <div> <h3 class="fs-2 text-body-emphasis">Combat Feast Buffet</h3>
+                    <p>A hearty buffet modeled after a true adventurer’s feast, featuring roast boar, meat pies, and jugs of Lumbridge mead. Every dish is inspired by classic in-game food, giving diners the feeling they’re boosting their Hitpoints IRL. We’ll throw in decorative rune platters and a chef’s hat for full immersion.</p>
 
+  </div> </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-map" style="font-size: 40px"></i> </div>
+                <div> <h3 class="fs-2 text-body-emphasis">Quest Board Challenges</h3>
+                    <p>Guests can take part in real-world “quests” posted on a medieval-style bulletin board near the entrance. From “Slay the Winged Rat” (catch the rubber bat hanging from the rafters) to “Deliver the Goblin Stew” (bring a drink to a random table), these side missions earn rewards like free drinks or loyalty stamps.</p>
+                    </div> </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-dragon" style="font-size: 40px"></i> </div>
+                <div> <h3 class="fs-2 text-body-emphasis">The Duke’s Private Lounge</h3>
+                    <p>A velvet-rope VIP area themed after Duke Horacio’s quarters, complete with candlelit booths, ornate tapestries, and a fireplace. It’s the perfect spot to sip Dragon Bitter and brag about your latest loot haul. We’ll add a bookshelf with lore books and fake clues for that extra roleplay flavor.</p>
+                    </div> </div> </div> </div>
 
-<div class="container footer-bar press-start-2p-regular" id="footer">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" >
+<!--    Footer imported from BootStrap and then customized using a mixture of external and in-line CSS.-->
+<div class="container-fluid footer-bar press-start-2p-regular" id="footer">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top" >
         <div class="col-md-4 d-flex align-items-center">
             <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
                 <img src="../assets/lumbridge_castle_tavern.png" alt="Lumbridge castle tavern logo" style="width: 70px"></a>
@@ -58,25 +85,25 @@ Date: 20250905
         </div>
         <ul class="nav list-unstyled" id="footer-link-list">
 
-            <li class="ms-3 footer-link"><a class="text-body-secondary" href="#" aria-label="twitter">
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://x.com/" target="_blank" aria-label="twitter">
                 <i class="fa-brands fa-square-twitter" style="color: white; font-size: 40px"></i></a>
             </li>
 
-            <li class="ms-3 footer-link"><a class="text-body-secondary" href="#" aria-label="youtube">
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://youtube.com" target="_blank" aria-label="youtube">
                 <i class="fa-brands fa-youtube" style="color: white; font-size: 40px"></i></a>
             </li>
 
-            <li class="ms-3 footer-link"><a class="text-body-secondary" href="#" aria-label="steam">
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://store.steampowered.com/" target="_blank" aria-label="steam">
                 <i class="fa-brands fa-square-steam" style="color: white; text-align: center; font-size: 40px"></i></a>
             </li>
 
-            <li class="ms-3 footer-link"><a class="text-body-secondary" href="#" aria-label="gitHub">
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://github.com" target="_blank" aria-label="gitHub">
                 <i class="fa-brands fa-github" style="color: white; font-size: 40px"></i></a>
             </li>
         </ul>
     </footer>
 </div>
-
+<!--Bootstrap JavaScript-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
