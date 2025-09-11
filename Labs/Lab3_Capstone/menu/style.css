@@ -47,9 +47,10 @@ body {
     max-width: 200px;
 }
 
-/*Styling used to fit the navbar restaurant logo to its div*/
+/*Styling used to fit the navbar restaurant logo to its div and for border*/
 #navbar-logo-image {
     height: 100%;
+    border: solid 1px #3C3D37
 }
 
 /*Setting the dimensions of the picture links for the navbar*/
@@ -63,16 +64,46 @@ body {
     box-shadow: 3px 3px 5px black;
 }
 
+#body_container {
+    margin-bottom: 400px;
+}
+
+
+
+#menu_header, #menu_body {
+    background-color: #697565;
+    border: black solid 5px;
+}
+
+#image_container {
+    height: 400px;
+}
+
+#image_container img {
+    max-height: 100%;
+    width: auto;
+}
+
+#food_description {
+    background-color: #ECDFCC;
+}
+
 /*Size and positioning styling for the footer*/
 #footer {
-    position: relative;
+    position: static;
     bottom: 0;
     left: 0;
     height: 120px;
     margin-top: 100px;
 }
 
+/*Size and positioning for restaurant logo in the footer*/
+#footer_restaurant_logo {
+    width: 70px;
+}
+
 /*Spacing targeting the social media links in the footer to create extra space between the links*/
 .footer-link {
     margin-right: 20px;
+    font-size: 40px;
 }
