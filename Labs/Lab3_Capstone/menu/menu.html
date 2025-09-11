@@ -9,62 +9,75 @@ Date: 20250905
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lumbridge Castle Tavern</title>
-    <link rel="icon" href="../assets/favicon.png" type="image/png"/>
+    <link rel="icon" href="../assets/favicon.png" type="image/png" />
+    <!--    Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--    Font Awesome-->
+    <script src="https://kit.fontawesome.com/4cbcab4108.js" crossorigin="anonymous"></script>
+    <!--    BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--    Personal CSS-->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <header>
-                <img src="../assets/banner.png" alt="castle banner">
-
-                <a href="index.html"><img src="../assets/home.png" alt="home icon link"></a>
-
-                <a href="hiring.html"><img src="../assets/now_hiring.png" alt="now hiring icon link"></a>
-
-                <a href="menu.html" ><img src="../assets/menu.png" alt="menu icon link"></a>
-
-    <h1>Menu</h1>
+    <!--    Navbar imported from BootStrap and then customized using a mixture of external and in-line CSS.-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top press-start-2p-regular">
+        <div class="container-fluid">
+            <div class="navbar-logo-container">
+                <img src="../assets/lumbridge_castle_tavern.png" alt="OSRS Logo for navbar" id="navbar-logo-image" style="border: solid 1px #3C3D37;">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mb-2 mb-md-0" id="navbar-item-list">
+                    <li class="nav-item mx-2" id="home-nav-item">
+                        <a class="nav-link active" id="home-link" href="../index/index.html"><img class="picture-link" src="../assets/home.png" alt="home page link"></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" id="menu-link" href="./menu.html"><img class="picture-link" src="../assets/menu.png" alt="menu page link"></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" id="hiring-link" href="../hiring/hiring.html"><img class="picture-link" src="../assets/now_hiring.png" alt="now hiring page link"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<table>
-   <tr>
-       <th>Image</th>
-       <th>Name</th>
-       <th>Description</th>
-       <th>Price</th>
-   </tr>
-    <tr id="dragonfire_stew" class="item">
-        <td class="item_image"><img src="../assets/food/dragonfire_stew.png" alt="dragonfire stew"></td>
-        <td class="item_name">Dragonfire Stew</td>
-        <td class="item_description">A hearty stew simmered with slow-cooked beef, root vegetables, and a touch of “dragon spice” that packs a warming kick. Served in a rustic cauldron-style bowl.</td>
-        <td class="item_price">12 gold coins</td>
-    </tr>
-    <tr id="shark_steak_supreme" class="item">
-        <td class="item_image"><img src="../assets/food/shark_steak_supreme.png" alt="shark steak supreme"></td>
-        <td class="item_name">Shark Steak Supreme</td>
-        <td class="item_description">A thick cut of grilled shark, basted in herb butter and flame-kissed to perfection. A favorite for high-level adventurers seeking strength.</td>
-        <td class="item_price">25 gold coins</td>
-    </tr>
-    <tr id="wizards_brew" class="item">
-        <td class="item_image"><img src="../assets/food/wizards_brew.png" alt="wizards brew"></td>
-        <td class="item_name">Wizard’s Brew</td>
-        <td class="item_description">A frothy, deep-blue beverage infused with mystical herbs and berries. Said to restore mana (or at least give you a second wind). Non-alcoholic, with an optional spiked version.</td>
-        <td class="item_price">7 gold coins (10 gold with spirits)</td>
-    </tr>
-    <tr id="gnome_delight_platter" class="item">
-        <td class="item_image"><img src="../assets/food/gnome_delight_platter.png" alt="gnome delight platter"></td>
-        <td class="item_name">Gnome Delight Platter</td>
-        <td class="item_description">A colorful spread of miniature gnome treats — berry-glazed kebabs, crunchy veggie wraps, and honeyed pastries. Perfect for sharing (or hoarding).</td>
-        <td class="item_price">18 gold coins</td>
-    </tr>
-    <tr id="lumbridge_apple_pie" class="item">
-        <td class="item_image"><img src="../assets/food/lumbridge_apple_pie.png" alt="lumbridge apple pie"></td>
-        <td class="item_name">Lumbridge Apple Pie</td>
-        <td class="item_description">A traditional dessert straight from the Duke’s kitchens. Golden, flaky crust filled with spiced apples, served warm with a dollop of cream.</td>
-        <td class="item_price">9 gold coins</td>
-    </tr>
-</table>
+<!--    Footer imported from BootStrap and then customized using a mixture of external and in-line CSS.-->
+<div class="container-fluid footer-bar press-start-2p-regular" id="footer">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top" >
+        <div class="col-md-4 d-flex align-items-center">
+            <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+                <img src="../assets/lumbridge_castle_tavern.png" alt="Lumbridge castle tavern logo" style="width: 70px"></a>
+            <span class="mb-3 mb-md-0" style="color: white; font-size: 10px">© 2025 Cody Johnson</span>
+        </div>
+        <ul class="nav list-unstyled" id="footer-link-list">
 
-<footer>
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://x.com/" target="_blank" aria-label="twitter">
+                <i class="fa-brands fa-square-twitter" style="color: white; font-size: 40px"></i></a>
+            </li>
 
-</footer>
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://youtube.com" target="_blank" aria-label="youtube">
+                <i class="fa-brands fa-youtube" style="color: white; font-size: 40px"></i></a>
+            </li>
+
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://store.steampowered.com/" target="_blank" aria-label="steam">
+                <i class="fa-brands fa-square-steam" style="color: white; text-align: center; font-size: 40px"></i></a>
+            </li>
+
+            <li class="ms-3 footer-link"><a class="text-body-secondary" href="https://github.com" target="_blank" aria-label="gitHub">
+                <i class="fa-brands fa-github" style="color: white; font-size: 40px"></i></a>
+            </li>
+        </ul>
+    </footer>
+</div>
+<!--Bootstrap JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -63,32 +63,6 @@ body {
     box-shadow: 3px 3px 5px black;
 }
 
-/*Formats the size of the main image on home page*/
-#home_image_container {
-    width: 40%;
-    height: 400px;
-    margin-top: 250px;
-    margin-bottom: 150px;
-}
-
-/*Places a shadow on the main image on home page*/
-#home_image_container img {
-    border: 5px solid black;
-    box-shadow: 10px 15px 15px black;
-}
-
-/*Places a shadow on the restaurant features box*/
-#hanging-icons {
-    background-color: #697565;
-    border: 5px solid black;
-    box-shadow: 10px 15px 15px black;
-}
-
-/*Sets the text size for restaurant features description text*/
-.features_text {
-    font-size: 14px;
-}
-
 /*Size and positioning styling for the footer*/
 #footer {
     position: relative;
