@@ -23,7 +23,7 @@ Date: 20250905
 </head>
 <body>
 <header>
-    <!--    Navbar imported from BootStrap and then customized using a mixture of external and in-line CSS.-->
+    <!--    Navbar imported from BootStrap and then customized using bootstrap classes and external CSS.-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top press-start-2p-regular">
         <div class="container-fluid">
             <div class="navbar-logo-container">
@@ -53,27 +53,32 @@ Date: 20250905
 <div class="container vh-100 mt-5" id="body_container">
     <div class="container h-25 col-12"></div>
     <div class="container" id="menu_main_container" >
-    <h1 class="text-center press-start-2p-regular fs-1 text-black py-5" id="menu_header">Menu</h1>
-    <div class="container h-75 col-12 p-4 mb-5" id="menu_body" style="border: solid 3px black;">
+<!--        Font Awesome Icons-->
+    <h1 class="text-center press-start-2p-regular fs-1 text-black py-5" id="menu_header"><i class="fa-solid fa-hat-wizard"></i> Menu <i class="fa-solid fa-dragon"></i></h1>
+    <div class="container h-75 col-12 p-4 mb-5" id="menu_body">
         <div class="row mb-5">
-            <div class="col-6 d-flex align-items-center justify-content-center" id="image_container"><img class="w-100" src="../assets/food/dragonfire_stew.png" alt="restaurant image for food" id="food_image"></div>
-            <div class="col-6 d-flex align-items-center justify-content-center"><p class="mb-0 h-100 fs-2 p-3" id="food_description" style="border: solid 3px black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorum earum fuga ipsam laboriosam qui reiciendis vero. Atque eaque laboriosam magni maiores, porro sapiente veritatis!</p></div>
+            <div class="col-6 d-flex align-items-center justify-content-center" id="image_container">
+                <img class="w-100" src="" alt="" id="food_image">
+            </div>
+            <div class="col-6 align-items-center justify-content-center press-start-2p-regular" id="food_text_container">
+                <div class="row h-25"><p class="mb-0 h-100 fs-3 p-3 food_text" id="food_name"></p></div>
+                <div class="row h-25"><p class="mb-0 h-100 fs-4 p-3 food_text" id="food_price"></p></div>
+                <div class="row h-50"><p class="mb-0 h-100 fs-6 p-3 food_text" id="food_description"></p></div>
+            </div>
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <button type="button" class="btn btn-light btn-lg" id="previous_button">< Previous</button>
+                <button type="button" class="btn btn-light btn-lg" id="previous_button">PREV</button>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <button type="button" class="btn btn-light btn-lg" id="next_button">Next ></button>
+                <button type="button" class="btn btn-light btn-lg" id="next_button">NEXT</button>
             </div>
         </div>
-
     </div>
     </div>
-
 </div>
 
-<!--    Footer imported from BootStrap and then customized using a mixture of external and in-line CSS.-->
+<!--    Footer imported from BootStrap and then customized using bootstrap classes and external CSS-->
 <div class="container-fluid footer-bar press-start-2p-regular" id="footer">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top" >
         <div class="col-md-4 d-flex align-items-center">
@@ -84,18 +89,22 @@ Date: 20250905
         <ul class="nav list-unstyled" id="footer-link-list">
 
             <li class="ms-3 footer-link"><a href="https://x.com/" target="_blank" aria-label="twitter">
+                <!--                Font Awesome icon-->
                 <i class="fa-brands fa-square-twitter text-primary"></i></a>
             </li>
 
             <li class="ms-3 footer-link"><a href="https://youtube.com" target="_blank" aria-label="youtube">
+                <!--                Font Awesome icon-->
                 <i class="fa-brands fa-youtube text-danger"></i></a>
             </li>
 
             <li class="ms-3 footer-link"><a href="https://store.steampowered.com/" target="_blank" aria-label="steam">
+                <!--                Font Awesome icon-->
                 <i class="fa-brands fa-square-steam text-secondary"></i></a>
             </li>
 
             <li class="ms-3 footer-link"><a href="https://github.com" target="_blank" aria-label="gitHub">
+                <!--                Font Awesome icon-->
                 <i class="fa-brands fa-github text-white"></i></a>
             </li>
         </ul>

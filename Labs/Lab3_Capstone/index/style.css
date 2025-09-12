@@ -64,11 +64,23 @@ body {
     box-shadow: 3px 3px 5px black;
 }
 
+#home_page_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 60%;
+    margin-top: 300px;
+    background-color: #ECDFCC;
+    border: solid 8px black;
+    color: black;
+}
+
 /*Formats the size of the main image container on home page*/
 #home_image_container {
     width: 40%;
     height: 400px;
-    margin-top: 250px;
+    margin-top: 100px;
     margin-bottom: 150px;
 }
 

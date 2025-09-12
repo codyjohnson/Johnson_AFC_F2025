@@ -64,6 +64,31 @@ body {
     box-shadow: 3px 3px 5px black;
 }
 
+.modal {
+    margin-top: 200px;
+}
+
+.modal-content {
+    background-color: #697565;
+    border: 3px solid black;
+}
+
+#application_submit_btn {
+    background-color: #ECDFCC;
+    border: black 3px solid;
+    color: black;
+}
+
+#application_submit_btn:hover {
+    border: 4px solid black;
+    box-shadow: 3px 3px 5px black;
+}
+
+#application_submit_btn:active {
+    border: 4px solid black;
+    box-shadow: none;
+}
+
 /*Size and positioning styling for the footer*/
 #footer {
     position: static;
