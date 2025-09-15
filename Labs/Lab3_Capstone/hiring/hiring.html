@@ -71,7 +71,7 @@ Date: 20250905
                 <h1 class="fw-bold mb-0 fs-2 text-black">Employment Application</h1>
             </div>
             <div class="modal-body p-5 pt-0">
-                <form class="">
+                <form class="" id="application_submission_form">
 
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control rounded-3" id="firstName" placeholder="" name="firstName">
@@ -123,12 +123,12 @@ Date: 20250905
                     <div class="maritalStatusRadioHeader" id="maritalStatusRadioHeader">
                         <p>Marital Status</p> </div>
 
-                    <div class="maritalStatusRadio">
-                        <input type="radio" class="" id="single" placeholder="" name="maritalStatus" value="single">
+                    <div class="maritalStatusRadioGroupDiv">
+                        <input type="radio" class="maritalStatusRadio" id="single" placeholder="" name="maritalStatus" value="single">
                         <label for="single" class="maritalLabel">Single</label> </div>
 
-                    <div class="maritalStatusRadio">
-                        <input type="radio" class="" id="married" placeholder="" name="maritalStatus" value="married">
+                    <div class="maritalStatusRadioGroupDiv">
+                        <input type="radio" class="maritalStatusRadio" id="married" placeholder="" name="maritalStatus" value="married">
                         <label for="married" class="maritalLabel">Married</label> </div>
 
                     <div class="favoriteColorHeader" id="favoriteColorHeader">
@@ -136,20 +136,21 @@ Date: 20250905
 
                     <div class="favoriteColor">
                         <label class="colorsLabel" for="blue">Blue: </label>
-                        <input type="checkbox" id="blue" name="colors" value="blue">
+                        <input type="checkbox" class="colors" id="blue" name="colors" value="blue">
                         <label class="colorsLabel" for="red">Red: </label>
-                        <input type="checkbox" id="red" name="colors" value="red">
+                        <input type="checkbox" class="colors" id="red" name="colors" value="red">
                         <label class="colorsLabel" for="purple">Purple: </label>
-                        <input type="checkbox" id="purple" name="colors" value="purple">
+                        <input type="checkbox" class="colors" id="purple" name="colors" value="purple">
                         <label class="colorsLabel" for="green">Green: </label>
-                        <input type="checkbox" id="green" name="colors" value="green">
+                        <input type="checkbox" class="colors" id="green" name="colors" value="green">
                         <label class="colorsLabel" for="orange">Orange: </label>
-                        <input type="checkbox" id="orange" name="colors" value="orange">
+                        <input type="checkbox" class="colors" id="orange" name="colors" value="orange">
                     </div>
 
                     <div class="form-floating mb-3" id="moreInfoContainer">
-                        <textarea class="form-control rounded-3" id="moreInfo" placeholder="Enter up to 30 characters on 4 rows..." name="moreInfo"></textarea>
-                        <label for="moreInfo">More Info</label> </div>
+                        <textarea class="form-control rounded-3" rows="4" id="moreInfo" placeholder="Enter up to 30 characters on 4 rows..." name="moreInfo"></textarea>
+                        <label for="moreInfo" id="moreInfoLabel">More Info</label>
+                    <small id="moreInfoCharCount"></small></div>
 
                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" id="application_submit_btn" type="submit">Submit</button>
                 </form> </div> </div> </div> </div>
