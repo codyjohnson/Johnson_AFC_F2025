@@ -10,7 +10,7 @@ const phoneLabel = document.querySelector("#phoneNumberLabel");
 const phonePattern = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
 let phoneValid = false;
 
-
+const moreInfoValidation = document.querySelector("#moreInfo");
 let moreInfoValid = false;
 
 ageValidation.addEventListener("change", function (event) {
@@ -19,13 +19,9 @@ ageValidation.addEventListener("change", function (event) {
     if (typeof ageValue === "number" && !isNaN(ageValue)) {
         if (ageValue >= 21 && ageValue <= 99) {
             ageValid = true;
-            this.classList.remove("is-invalid");
-            this.classList.add("is-valid");
         } else {
             alert("Age must be between 21 and 99.")
             ageValid = false;
-            this.classList.remove("is-valid");
-            this.classList.add("is-invalid");
         }
     } else {
         alert("Age must be a number.")
@@ -52,7 +48,7 @@ phoneValidation.addEventListener("input", function (event) {
         this.classList.remove("is-valid");
         this.classList.add("is-invalid");
     }
-})
+});
 
 phoneValidation.addEventListener("change", function (event) {
 
