@@ -73,10 +73,41 @@ body {
     border: 3px solid black;
 }
 
+#maritalStatusRadioHeader {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.maritalStatusRadio {
+    display: inline;
+}
+
+.maritalLabel {
+    color: #3C3D37;
+}
+
+#favoriteColorHeader {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.colorsLabel {
+    color: #3C3D37;
+}
+
+#moreInfoContainer {
+    margin-top: 25px;
+}
+
+#moreInfo {
+    height: 125px
+}
+
 #application_submit_btn {
     background-color: #ECDFCC;
     border: black 3px solid;
     color: black;
+    margin-top: 25px;
 }
 
 #application_submit_btn:hover {
