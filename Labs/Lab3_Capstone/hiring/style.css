@@ -120,14 +120,22 @@ body {
     margin-top: 25px;
 }
 
-/*Hover effect for the form submit button*/
-#application_submit_btn:hover {
+/*Styling for the form reset button*/
+#application_reset_btn {
+    background-color: rgba(250, 2, 2, 0.5);
+    border: black 3px solid;
+    color: black;
+    margin-top: 25px;
+}
+
+/*Hover effect for the form submit and reset buttons*/
+#application_submit_btn:hover, #application_reset_btn:hover {
     border: 4px solid black;
     box-shadow: 3px 3px 5px black;
 }
 
-/*Creates an effect for the button when clicked*/
-#application_submit_btn:active {
+/*Creates an effect for the buttons when clicked*/
+#application_submit_btn:active, #application_reset_btn:active {
     border: 4px solid black;
     box-shadow: none;
 }

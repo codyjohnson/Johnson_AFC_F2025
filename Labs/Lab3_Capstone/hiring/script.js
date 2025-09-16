@@ -78,7 +78,7 @@ phoneValidation.addEventListener("change", function (event) {
 //a character counter so the user can see how many characters they have typed.
 moreInfoValidation.addEventListener("input", function (event) {
 
-    moreInfoCharCount.innerText = "Character Count: " + moreInfoValidation.value.length;
+    moreInfoCharCount.innerText = "Character Count: " + moreInfoValidation.value.length + "/30";
 
     if (moreInfoValidation.value === "") {
         this.classList.remove("is-invalid", "is-valid");
@@ -149,4 +149,11 @@ appForm.addEventListener("submit", function (event) {
             alert("Submission error. More info entry must be 30 characters or less.")
         }
     }
+});
+
+// Function for the reset button. Resets boolean values to prep form for new submission validation.
+appForm.addEventListener("reset", function (event) {
+    phoneValid = false;
+    ageValid = true;
+    moreInfoValid = true;
 });
