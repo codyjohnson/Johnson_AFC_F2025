@@ -97,8 +97,6 @@ appForm.addEventListener("submit", function (event) {
 
     if (ageValid && phoneValid && moreInfoValid) {
 
-
-
         let formData = {
             firstName: document.querySelector("#firstName").value,
             lastName: document.querySelector("#lastName").value,
@@ -118,9 +116,17 @@ appForm.addEventListener("submit", function (event) {
         console.log(formData);
 
     } else {
-        alert("Submission error. Please check your entries and try again.")
+        
+        if (!ageValid) {
+            alert("Submission error. Age must be a number. Age must also be between 21 and 99.")
+        }
+        
+        if (!phoneValid) {
+            alert("Submission error. Required phone number format is 111-222-3333.")
+        }
+        
+        if (!moreInfoValid) {
+            alert("Submission error. More info entry must be 30 characters or less.")
+        }
     }
-
-
-
-})
+});
