@@ -1,14 +1,14 @@
 /*Author: Cody Johnson*/
 /*Assignment: Lab 3 - Capstone*/
-/*Date: 20250905*/
+/*Date: 20250916*/
 
 /*For my color palette, I went to Color Hunt and selected a theme that I felt went well with the medieval theme.*/
 /*Source: https://colorhunt.co/palette/181c143c3d37697565ecdfcc*/
 /*Colors:*/
-/*#181C14*/
-/*#3C3D37*/
-/*#697565*/
-/*#ECDFCC*/
+/*#181C14 -- Dark color used for headers and footers*/
+/*#3C3D37 -- Gray used for the navbar logo image border*/
+/*#697565 -- Green color used for restaurant features, menu, and hiring form*/
+/*#ECDFCC -- Tan accent color used for buttons and some text background*/
 
 /*Sets the background image for the webpage*/
 body {
@@ -64,6 +64,7 @@ body {
     box-shadow: 3px 3px 5px black;
 }
 
+/*Styling for the home page header - h1*/
 #home_page_title {
     display: flex;
     align-items: center;

@@ -1,8 +1,11 @@
 /*Author: Cody Johnson*/
 /*Assignment: Lab 3 - Capstone*/
-/*Date: 20250905*/
+/*Date: 20250916*/
 
+//Initializes the target index of the food array.
 let index = 0;
+
+//Food array used for displaying the menu items.
 const food = [
 
     foodItem = {
@@ -36,30 +39,32 @@ const food = [
         price: 9
     }
     ];
-
+//This block of code populates the menu when the page loads.
 document.getElementById('food_image').setAttribute('src', food[index].img_link);
 document.getElementById('food_image').setAttribute('alt', food[index].name);
 document.getElementById('food_name').innerText = food[index].name;
 document.getElementById('food_description').innerText = food[index].description;
+//Internation number format function is used to provide currency symbol
 document.getElementById('food_price').innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(food[index].price);
 
+//This function is called when the next button is clicked. All food related fields on the menu are populated with an item from the array.
 document.getElementById('next_button').addEventListener('click', function nextImage() {
     index = (index + 1) % food.length;
     document.getElementById('food_image').setAttribute('src', food[index].img_link);
     document.getElementById('food_image').setAttribute('alt', food[index].name);
     document.getElementById('food_name').innerText = food[index].name;
     document.getElementById('food_description').innerText = food[index].description;
+    //Internation number format function is used to provide currency symbol
     document.getElementById('food_price').innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(food[index].price);
 });
 
+//This function is called when the previous button is clicked. All food related fields on the menu are populated with an item from the array.
 document.getElementById('previous_button').addEventListener('click', function prevImage() {
     index = (index - 1 + food.length) % food.length;
     document.getElementById('food_image').setAttribute('src', food[index].img_link);
     document.getElementById('food_image').setAttribute('alt', food[index].name);
     document.getElementById('food_name').innerText = food[index].name;
     document.getElementById('food_description').innerText = food[index].description;
+    //Internation number format function is used to provide currency symbol
     document.getElementById('food_price').innerText = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(food[index].price);
-
-
-
 });

@@ -1,7 +1,7 @@
 <!--
 Author: Cody Johnson
 Assignment: Lab 3 - Capstone
-Date: 20250905
+Date: 20250916
 -->
 <!doctype html>
 <html lang="en">
@@ -53,28 +53,31 @@ Date: 20250905
 <div class="container vh-100 mt-5" id="body_container">
     <div class="container h-25 col-12"></div>
     <div class="container" id="menu_main_container" >
-<!--        Font Awesome Icons-->
-    <h1 class="text-center press-start-2p-regular fs-1 text-black py-5" id="menu_header"><i class="fa-solid fa-hat-wizard"></i> Menu <i class="fa-solid fa-dragon"></i></h1>
-    <div class="container h-75 col-12 p-4 mb-5" id="menu_body">
-        <div class="row mb-5">
-            <div class="col-6 d-flex align-items-center justify-content-center" id="image_container">
-                <img class="w-100" src="" alt="" id="food_image">
+        <!--        Font Awesome Icons-->
+        <h1 class="text-center press-start-2p-regular fs-1 text-black py-5" id="menu_header"><i class="fa-solid fa-hat-wizard"></i> Menu <i class="fa-solid fa-dragon"></i></h1>
+        <div class="container h-75 col-12 p-4 mb-5" id="menu_body">
+            <div class="row mb-5">
+                <div class="col-6 d-flex align-items-center justify-content-center" id="image_container">
+<!--                    Image for the food items. src and alt are populated and controlled by JS-->
+                    <img class="w-100" src="" alt="" id="food_image">
+                </div>
+                <div class="col-6 align-items-center justify-content-center press-start-2p-regular" id="food_text_container">
+<!--                    food text, price, and description inner text are populated and controlled by JS-->
+                    <div class="row h-25"><p class="mb-0 h-100 fs-3 p-3 food_text" id="food_name"></p></div>
+                    <div class="row h-25"><p class="mb-0 h-100 fs-4 p-3 food_text" id="food_price"></p></div>
+                    <div class="row h-50"><p class="mb-0 h-100 fs-6 p-3 food_text" id="food_description"></p></div>
+                </div>
             </div>
-            <div class="col-6 align-items-center justify-content-center press-start-2p-regular" id="food_text_container">
-                <div class="row h-25"><p class="mb-0 h-100 fs-3 p-3 food_text" id="food_name"></p></div>
-                <div class="row h-25"><p class="mb-0 h-100 fs-4 p-3 food_text" id="food_price"></p></div>
-                <div class="row h-50"><p class="mb-0 h-100 fs-6 p-3 food_text" id="food_description"></p></div>
+<!--            Buttons to toggle forward and backword through the array of food items for the menu-->
+            <div class="row">
+                <div class="col-6 d-flex justify-content-center">
+                    <button type="button" class="btn btn-light btn-lg" id="previous_button">PREV</button>
+                </div>
+                <div class="col-6 d-flex justify-content-center">
+                    <button type="button" class="btn btn-light btn-lg" id="next_button">NEXT</button>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 d-flex justify-content-center">
-                <button type="button" class="btn btn-light btn-lg" id="previous_button">PREV</button>
-            </div>
-            <div class="col-6 d-flex justify-content-center">
-                <button type="button" class="btn btn-light btn-lg" id="next_button">NEXT</button>
-            </div>
-        </div>
-    </div>
     </div>
 </div>
 

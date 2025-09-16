@@ -1,14 +1,14 @@
 /*Author: Cody Johnson*/
 /*Assignment: Lab 3 - Capstone*/
-/*Date: 20250905*/
+/*Date: 20250916*/
 
 /*For my color palette, I went to Color Hunt and selected a theme that I felt went well with the medieval theme.*/
 /*Source: https://colorhunt.co/palette/181c143c3d37697565ecdfcc*/
 /*Colors:*/
-/*#181C14*/
-/*#3C3D37*/
-/*#697565*/
-/*#ECDFCC*/
+/*#181C14 -- Dark color used for headers and footers*/
+/*#3C3D37 -- Gray used for the navbar logo image border*/
+/*#697565 -- Green color used for restaurant features, menu, and hiring form*/
+/*#ECDFCC -- Tan accent color used for buttons and some text background*/
 
 /*Sets the background image for the webpage*/
 body {
@@ -64,46 +64,56 @@ body {
     box-shadow: 3px 3px 5px black;
 }
 
+/*Spacing for the primary menu body container*/
 #body_container {
     margin-bottom: 400px;
 }
 
+/*Coloring and border for the menu body and header*/
 #menu_header, #menu_body {
     background-color: #697565;
     border: black solid 5px;
 }
 
+/*Sets the height for the food image container*/
 #image_container {
     height: 400px;
 }
 
+/*Adds border to food images*/
 #food_image {
     border: 3px solid black;
 }
 
+/*Sizing adjustments for the food images and their container*/
 #image_container img {
     max-height: 100%;
     width: auto;
 }
 
+/*Adds a border to the food text container*/
 #food_text_container {
     border: 3px solid black;
 }
 
+/*Sets background color for food text*/
 .food_text {
     background-color: #ECDFCC;
 }
 
+/*Styling for the menu buttons*/
 #previous_button, #next_button {
     background-color: #ECDFCC;
     border: black 3px solid;
 }
 
+/*Creates a hover over effect for the menu buttons*/
 #previous_button:hover, #next_button:hover {
     border: 4px solid black;
     box-shadow: 3px 3px 5px black;
 }
 
+/*Creates an effect when menu buttons are clicked*/
 #previous_button:active, #next_button:active {
     border: 4px solid black;
     box-shadow: none;
