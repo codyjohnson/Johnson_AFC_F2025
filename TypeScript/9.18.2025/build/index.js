@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Monster_1 = require("./Monster");
+let monster1 = new Monster_1.Monster("Cody", "Johnson", 33, "Human", "TEST");
+let monster2 = new Monster_1.Monster("Luke", "Johnson", 2, "Undead", "TEST");
+let monsterData = [monster1, 99, "Collection String"];
+let monsters = [monster1, monster2];
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+(0, Monster_1.getFirst)(numbers);
+(0, Monster_1.getFirst)(monsters);
