@@ -37,7 +37,7 @@ module.exports.isPalindrome = (inputString) => {
 
     //For loop that performs palindrome value comparison tests. Loop will
     //exit early when determined that the string is not a palindrome.
-    for (let j = 0; j < newString.length; j++) {
+    for (let j = 0; j < newString.length / 2; j++) {
         if (newString.charAt(j) !== newString.charAt(newString.length - 1 - j)) {
             return false;
         }
