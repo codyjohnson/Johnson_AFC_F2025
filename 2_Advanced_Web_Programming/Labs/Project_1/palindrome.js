@@ -17,7 +17,7 @@ module.exports.isPalindrome = (inputString) => {
         return true;
     }
 
-    //Takes input string, removes leading/trailing spaces and makes it all
+    //Takes input string, removes leading/trailing spaces and makes the entire string
     //lower case.
     inputString = inputString.trim().toLowerCase();
 
