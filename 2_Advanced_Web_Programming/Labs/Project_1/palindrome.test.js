@@ -35,19 +35,28 @@ describe('Palindrome Function Tests', () => {
         test('Passing in a undefined', () => {
             expect(isPalindrome(undefined)).toBe(false);
         });
+
+        test('Passing in a function', () => {
+            function func1(){}
+            expect(isPalindrome(func1)).toBe(false);
+        });
+
+        test('Passing in null', () => {
+            expect(isPalindrome(null)).toBe(false);
+        });
     });
 
     describe('Testing return for true palindromes', () => {
 
-        test('(Empty string)', () => {
+        test('""', () => {
             expect(isPalindrome("")).toBe(true);
         });
 
-        test('(A single space)', () => {
+        test('" "', () => {
             expect(isPalindrome(" ")).toBe(true);
         });
 
-        test('A single letter', () => {
+        test('a', () => {
             expect(isPalindrome("a")).toBe(true);
         });
 
@@ -55,8 +64,8 @@ describe('Palindrome Function Tests', () => {
             expect(isPalindrome("Racecar")).toBe(true);
         });
 
-        test('RACecar    ', () => {
-            expect(isPalindrome("RACecar    ")).toBe(true);
+        test('RACecaR    ', () => {
+            expect(isPalindrome("RACecaR    ")).toBe(true);
         });
 
         test('Racecar Racecar Racecar Racecar', () => {
@@ -73,6 +82,14 @@ describe('Palindrome Function Tests', () => {
 
         test("Red rum, sir, is murder.", () => {
             expect(isPalindrome("Red rum, sir, is murder.")).toBe(true);
+        });
+
+        test("!!Ta co c @a? t.", () => {
+            expect(isPalindrome("!!Ta co c @a? t.")).toBe(true);
+        });
+
+        test("T. Eliot, top bard, notes putrid tang emanating, is sad; I'd assign it a name: gnat dirt upset on drab pot toilet.", () => {
+            expect(isPalindrome("T. Eliot, top bard, notes putrid tang emanating, is sad; I'd assign it a name: gnat dirt upset on drab pot toilet.")).toBe(true);
         });
     });
 
@@ -92,6 +109,10 @@ describe('Palindrome Function Tests', () => {
 
         test('xyyyyyyyyyyyyyyyt', () => {
             expect(isPalindrome("xyyyyyyyyyyyyyyyt")).toBe(false);
+        });
+
+        test('not a palindrome', () => {
+            expect(isPalindrome("not a palindrome")).toBe(false);
         });
     });
 });
