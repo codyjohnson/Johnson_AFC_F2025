@@ -3,7 +3,7 @@
 /*Date: 20250922*/
 
 //function that takes one string input, checks to see if the string given
-//is a palindrome and returns true of false.
+//is a palindrome and returns true or false.
 module.exports.isPalindrome = (inputString) => {
 
     //Checks to make sure the provided argument is a string.
@@ -12,30 +12,30 @@ module.exports.isPalindrome = (inputString) => {
     }
 
     //Special case: Returns true for empty strings since they do not
-    //validate the rules for being considered a palindrome.
+    //violate the rules for being considered a palindrome.
     if (inputString === "") {
         return true;
     }
 
-    //Takes input string, removes leading/trailing spaces and makes the entire string
+    //Takes input string, removes leading/trailing spaces, and makes the entire string
     //lower case.
     inputString = inputString.trim().toLowerCase();
 
     //Regex pattern to check for special characters.
     const specialCharacters = /[^a-zA-Z0-9]/;
 
-    //new string variable that will be used when rebuilding the string
+    //new string variable that will be used when rebuilding the string value
     //without special characters.
     let newString = "";
 
-    //For loop that strips out special characters from the targeted string.
+    //For-loop that strips out special characters from the input string.
     for (let i = 0; i < inputString.length; i++) {
         if (!specialCharacters.test(inputString[i])) {
             newString += inputString[i];
         }
     }
 
-    //For loop that performs palindrome value comparison tests. Loop will
+    //For-loop that performs palindrome value comparison tests. Loop will
     //exit early when determined that the string is not a palindrome.
     for (let j = 0; j < newString.length / 2; j++) {
         if (newString.charAt(j) !== newString.charAt(newString.length - 1 - j)) {
@@ -43,6 +43,6 @@ module.exports.isPalindrome = (inputString) => {
         }
     }
 
-    //Returns true for value that make it through the palindrome test for loop.
+    //Returns true for string inputs that make it through the palindrome test for-loop.
     return true;
 }
