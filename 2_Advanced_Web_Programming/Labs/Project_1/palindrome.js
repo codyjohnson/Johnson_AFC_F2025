@@ -1,0 +1,48 @@
+/*Author: Cody Johnson*/
+/*Assignment: Lab 1*/
+/*Date: 20250922*/
+
+//function that takes one string input, checks to see if the string given
+//is a palindrome and returns true of false.
+module.exports.isPalindrome = (inputString) => {
+
+    //Checks to make sure the provided argument is a string.
+    if (typeof inputString !== "string") {
+        return false;
+    }
+
+    //Special case: Returns true for empty strings since they do not
+    //validate the rules for being considered a palindrome.
+    if (inputString === "") {
+        return true;
+    }
+
+    //Takes input string, removes leading/trailing spaces and makes it all
+    //lower case.
+    inputString = inputString.trim().toLowerCase();
+
+    //Regex pattern to check for special characters.
+    const specialCharacters = /[^a-zA-Z0-9]/;
+
+    //new string variable that will be used when rebuilding the string
+    //without special characters.
+    let newString = "";
+
+    //For loop that strips out special characters from the targeted string.
+    for (let i = 0; i < inputString.length; i++) {
+        if (!specialCharacters.test(inputString[i])) {
+            newString += inputString[i];
+        }
+    }
+
+    //For loop that performs palindrome value comparison tests. Loop will
+    //exit early when determined that the string is not a palindrome.
+    for (let j = 0; j < newString.length; j++) {
+        if (newString.charAt(j) !== newString.charAt(newString.length - 1 - j)) {
+            return false;
+        }
+    }
+
+    //Returns true for value that make it through the palindrome test for loop.
+    return true;
+}
