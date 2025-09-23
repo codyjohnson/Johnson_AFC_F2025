@@ -1,55 +1,70 @@
 /*Author: Cody Johnson*/
 /*Assignment: Lab 1*/
-/*Date: 20250922*/
+/*Date: 20250923*/
 
-const{isPalindrome} = require('./palindrome');
+const{isPalindrome} = require('../src/index');
 
-describe('Palindrome Function Tests', () => {
+describe('Palindrome Function Test Suite', () => {
 
-    describe('Does the function exist and take the specified number of parameters correctly', () => {
+    //Basic starter tests to make sure the function exists and is accepting the correct number of arguments.
+    describe('Does the function exist and take the specified number of arguments correctly?', () => {
 
-        test('Does the isPalindrome function exist', () => {
+        test('Does isPalindrome() exist?', () => {
             expect(typeof isPalindrome).toBe('function');
         });
 
-        test('Does the isPalindrome function accept only one argument', () => {
+        test('Does isPalindrome() accept only one argument?', () => {
             expect(isPalindrome.length).toBe(1);
         });
     });
 
-    describe('Does isPalindrome return false for non-string types', () => {
+    //Tests that check if isPalindrome() handles non-string input correctly.
+    describe('Does isPalindrome() return false for non-string types?', () => {
 
-        test('Returns false when passing in a number', () => {
+        test('number', () => {
             expect(isPalindrome(9)).toBe(false);
         });
 
-        test('Returns false when passing in a boolean', () => {
+        test('boolean', () => {
             expect(isPalindrome(true)).toBe(false);
         });
 
-        test('Returns false when passing in an array', () => {
+        test('array', () => {
             expect(isPalindrome([])).toBe(false);
         });
 
-        test('Returns false when passing in a object', () => {
+        test('object', () => {
             expect(isPalindrome({})).toBe(false);
         });
 
-        test('Returns false when passing in an undefined', () => {
+        test('undefined', () => {
             expect(isPalindrome(undefined)).toBe(false);
         });
 
-        test('Returns false when passing in a function', () => {
-            function func1(){}
-            expect(isPalindrome(func1)).toBe(false);
+        test('function', () => {
+            function func(){}
+            expect(isPalindrome(func)).toBe(false);
         });
 
-        test('Returns false when passing in null', () => {
+        test('null', () => {
             expect(isPalindrome(null)).toBe(false);
+        });
+
+        test('NaN', () => {
+            expect(isPalindrome(NaN)).toBe(false);
+        });
+
+        test('Infinity', () => {
+            expect(isPalindrome(Infinity)).toBe(false);
+        });
+
+        test('-Infinity', () => {
+            expect(isPalindrome(-Infinity)).toBe(false);
         });
     });
 
-    describe('Does isPalindrome return true for palindromes', () => {
+    //Tests containing confirmed palindromes.
+    describe('Does isPalindrome() return true for palindromes?', () => {
 
         test('""', () => {
             expect(isPalindrome("")).toBe(true);
@@ -79,12 +94,12 @@ describe('Palindrome Function Tests', () => {
             expect(isPalindrome("RACecaR    ")).toBe(true);
         });
 
-        test('Racecar Racecar Racecar Racecar', () => {
-            expect(isPalindrome("Racecar Racecar Racecar Racecar")).toBe(true);
+        test(' Racecar Racecar Racecar Racecar', () => {
+            expect(isPalindrome(" Racecar Racecar Racecar Racecar")).toBe(true);
         });
 
-        test(' $ Rac&e c a !r   ', () => {
-            expect(isPalindrome(" $ Rac&e c a !r   ")).toBe(true);
+        test('$ Rac&e c a !r   ', () => {
+            expect(isPalindrome("$ Rac&e c a !r   ")).toBe(true);
         });
 
         test("Madam I'm Adam.", () => {
@@ -104,7 +119,8 @@ describe('Palindrome Function Tests', () => {
         });
     });
 
-    describe('Does isPalindrome return false for non-palindromes', () => {
+    //Tests containing confirmed non-palindromes.
+    describe('Does isPalindrome() return false for non-palindromes?', () => {
 
         test('This is a test', () => {
             expect(isPalindrome("This is a test")).toBe(false);
@@ -120,6 +136,10 @@ describe('Palindrome Function Tests', () => {
 
         test('xyyyyyyyyyyyyyyyt', () => {
             expect(isPalindrome("xyyyyyyyyyyyyyyyt")).toBe(false);
+        });
+
+        test('xyyyyyyyyyyyyyyyy', () => {
+            expect(isPalindrome("xyyyyyyyyyyyyyyyy")).toBe(false);
         });
 
         test('not a palindrome', () => {

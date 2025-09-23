@@ -1,8 +1,8 @@
 /*Author: Cody Johnson*/
 /*Assignment: Lab 1*/
-/*Date: 20250922*/
+/*Date: 20250923*/
 
-//function that takes one string input, checks to see if the string given
+//Function that takes one string input, checks to see if the string given
 //is a palindrome and returns true or false.
 module.exports.isPalindrome = (inputString) => {
 
@@ -24,11 +24,11 @@ module.exports.isPalindrome = (inputString) => {
     //Regex pattern to check for special characters.
     const specialCharacters = /[^a-zA-Z0-9]/;
 
-    //new string variable that will be used when rebuilding the string value
+    //New string variable that will be used when rebuilding the string value
     //without special characters.
     let newString = "";
 
-    //For-loop that strips out special characters from the input string.
+    //For-loop that strips out special characters and internal spaces from the input string.
     for (let i = 0; i < inputString.length; i++) {
         if (!specialCharacters.test(inputString[i])) {
             newString += inputString[i];
@@ -43,6 +43,6 @@ module.exports.isPalindrome = (inputString) => {
         }
     }
 
-    //Returns true for string inputs that make it through the palindrome test for-loop.
+    //Returns true for string inputs that make it through the palindrome test for-loop without exiting.
     return true;
 }

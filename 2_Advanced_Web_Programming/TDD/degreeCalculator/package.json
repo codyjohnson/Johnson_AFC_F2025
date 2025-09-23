@@ -1,11 +1,11 @@
 {
-  "name": "project_1",
+  "name": "degreecalculator",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "palindrome.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
