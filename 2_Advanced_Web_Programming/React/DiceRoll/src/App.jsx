@@ -9,11 +9,13 @@ function App() {
 
   return (
     <>
-        <div>
-            <Dice randomNumber={randomNumber} />
-        </div>
-        <div>
-            <button onClick={() => setRandomNumber(randomNumberGenerator())}>Roll Dice</button>
+        <div className="App">
+            <div>
+                <Dice randomNumber={randomNumber} />
+            </div>
+            <div>
+                <button onClick={() => setRandomNumber(randomNumberGenerator())}>Roll Dice</button>
+            </div>
         </div>
     </>
   );
