@@ -1,0 +1,26 @@
+body {
+    background-image: url("../assets/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+}
+
+h1 {
+    background-color: #f10909;
+    border: 3px solid black;
+    margin: 0;
+}
+
+button {
+    margin: 50px;
+}
+
+.card {
+    border: 3px solid black;
+    background-color: grey;
+    margin: 0;
+}
+
+p {
+    background-color: yellow;
+}
