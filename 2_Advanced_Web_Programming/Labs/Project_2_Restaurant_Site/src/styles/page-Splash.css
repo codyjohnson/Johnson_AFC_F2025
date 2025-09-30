@@ -14,11 +14,11 @@
     background-image: url("../assets/splash_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #card_container {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 2rem;
+    flex-wrap: wrap;
 }

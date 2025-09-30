@@ -1,33 +1,21 @@
-import {Button, Card, CardBody, CardSubtitle, CardText, CardTitle} from "reactstrap";
+import {Card, CardBody, CardText, CardTitle} from "reactstrap";
 import "../styles/component-RestaurantFeatureCard.css";
 
-function RestaurantFeatureCard() {
+function RestaurantFeatureCard({restaurantFeature}) {
     return (
         <Card className='card'
               style={{
                   width: '18rem'
               }}
         >
-            <img
-                alt="Sample"
-                src="https://picsum.photos/300/200"
-            />
             <CardBody>
                 <CardTitle tag="h5">
-                    Card title
+                    <i class={restaurantFeature.fontAwesome}></i><h3
+                    className="fs-2 text-body-emphasis">{restaurantFeature.title}</h3>
                 </CardTitle>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    Card subtitle
-                </CardSubtitle>
                 <CardText>
-                    Some quick example text to build on the card title and make up the bulk of the card‘s content.
+                    {restaurantFeature.description}
                 </CardText>
-                <Button>
-                    Button
-                </Button>
             </CardBody>
         </Card>
     );
