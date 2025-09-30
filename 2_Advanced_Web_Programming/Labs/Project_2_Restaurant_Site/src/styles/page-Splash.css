@@ -1,0 +1,24 @@
+/*Author: Cody Johnson*/
+/*Assignment: Lab 2*/
+/*Date: 20250930*/
+
+/*For my color palette, I went to Color Hunt and selected a theme that I felt went well with the medieval theme.*/
+/*Source: https://colorhunt.co/palette/f1efecd4c9be123458030303*/
+/*Colors:*/
+/*#F1EFEC -- Light Tan*/
+/*#D4C9BE -- Darker tan*/
+/*#123458 -- Dark blue*/
+/*#030303 -- Black*/
+
+#splash_page_body {
+    background-image: url("../assets/splash_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#card_container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}

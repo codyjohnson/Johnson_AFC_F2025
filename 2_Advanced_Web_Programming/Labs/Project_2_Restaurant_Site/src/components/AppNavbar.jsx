@@ -10,7 +10,7 @@ import {
     NavbarText,
 } from 'reactstrap';
 import lumbridge_castle_tavern from '../assets/lumbridge_castle_tavern.png';
-import '../styles/AppNavbar.css';
+import '../styles/component-AppNavbar.css';
 
 function AppNavbar(args) {
     const [isOpen, setIsOpen] = useState(false);
