@@ -1,0 +1,45 @@
+/*Author: Cody Johnson*/
+/*Assignment: Lab 2*/
+/*Date: 20250930*/
+
+/*For my color palette, I went to Color Hunt and selected a theme that I felt went well with the medieval theme.*/
+/*Source: https://colorhunt.co/palette/f1efecd4c9be123458030303*/
+/*Colors:*/
+/*#F1EFEC -- Light Tan*/
+/*#D4C9BE -- Darker tan*/
+/*#123458 -- Dark blue*/
+/*#030303 -- Black*/
+
+#navbar {
+    background-color: #123458;
+    border-bottom: 5px solid #030303;
+}
+
+#lumbridge_castle_tavern_logo {
+    height: 100px;
+}
+
+#navbarBrand {
+    margin-left: 30px;
+    margin-right: 100px;
+    color: #F1EFEC;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    text-shadow: 6px 6px 5px #030303;
+}
+
+#navItemList {
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+.navLink {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #D4C9BE;
+    font-size: 20px;
+    text-shadow: 3px 3px 5px #030303;
+}

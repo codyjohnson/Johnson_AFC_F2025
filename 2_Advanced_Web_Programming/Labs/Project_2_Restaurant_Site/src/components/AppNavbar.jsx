@@ -7,12 +7,10 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
     NavbarText,
 } from 'reactstrap';
+import lumbridge_castle_tavern from '../assets/lumbridge_castle_tavern.png';
+import '../styles/AppNavbar.css';
 
 function AppNavbar(args) {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,40 +18,29 @@ function AppNavbar(args) {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div>
-            <Navbar
+        <>
+            <Navbar id={"navbar"}
                 dark
-                color="dark"
-                expand="md"
+                expand="lg"
                 {...args}>
-                <NavbarBrand href="/">reactstrap</NavbarBrand>
+                <NavbarText> <img id={"lumbridge_castle_tavern_logo"} src={lumbridge_castle_tavern} alt="Lumbridge Castle Tavern logo"/> </NavbarText>
+                <NavbarBrand id={"navbarBrand"} href="/">Lumbridge Castle Tavern</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="me-auto" navbar>
+                    <Nav id={"navItemList"} className="me-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                            <NavLink className='navLink' href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
-                                GitHub
-                            </NavLink>
+                            <NavLink className='navLink' href="/menu/">Menu</NavLink>
                         </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Options
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem>Option 1</DropdownItem>
-                                <DropdownItem>Option 2</DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>Reset</DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
+                        <NavItem>
+                            <NavLink className='navLink' href="/hiring/">Hiring</NavLink>
+                        </NavItem>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
                 </Collapse>
             </Navbar>
-        </div>
+        </>
     );
 }
 
