@@ -1,5 +1,6 @@
 import RestaurantFeatureCard from "../components/RestaurantFeatureCard.jsx";
 import "../styles/page-Splash.css";
+import homePageImage from "../assets/home_page_image.png";
 
 function Splash() {
 
@@ -32,6 +33,10 @@ function Splash() {
     return (
         <>
             <div id="splash_page_body">
+                <div id="splash_page_image_container"><img id="splash_page_image" src={homePageImage}/></div>
+
+                <div id="heading_container"><h2>Restaurant Features</h2></div>
+
                 <div id="card_container">
                     {restaurantFeatureTiles}
                 </div>

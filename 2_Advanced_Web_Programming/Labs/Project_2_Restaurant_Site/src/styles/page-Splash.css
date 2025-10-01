@@ -10,15 +10,44 @@
 /*#123458 -- Dark blue*/
 /*#030303 -- Black*/
 
-#splash_page_body {
-    background-image: url("../assets/splash_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+#splash_page_image_container {
+    max-width: 40%;
+    margin: auto;
+    padding-top: 150px;
+
+}
+
+#splash_page_image {
+    width: 100%;
+    border-radius: 2rem;
+    border: 2px solid black;
+    box-shadow: 10px 10px 20px #030303;
 }
 
 #card_container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+#heading_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    height: 200px;
+}
+
+h2 {
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+    box-shadow: 10px 10px 20px #030303;
+    background-color: #D4C9BE;
+    font-family: "Oldenburg", serif;
+    font-style: normal;
+    font-size: 55px;
+    line-height: 100px;
+    min-width: 50%;
+    color: #030303;
 }

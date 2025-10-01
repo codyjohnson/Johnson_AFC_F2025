@@ -1,0 +1,9 @@
+img {
+    width: 100%;
+}
+
+#dogImageContainer {
+    max-width: 25%;
+    margin: auto;
+    padding-bottom: 50px;
+}

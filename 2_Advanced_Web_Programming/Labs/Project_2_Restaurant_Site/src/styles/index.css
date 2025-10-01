@@ -1,0 +1,8 @@
+#root {
+    background-image: url("../assets/splash_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
